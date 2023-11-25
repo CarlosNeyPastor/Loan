@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,13 +23,17 @@ namespace Loan
             Application.SetCompatibleTextRenderingDefault(false);
             /// Application.Run(new MainMenu());  # Original
             Application.Run(formMainMenu = new MainMenu());
+        }
+
+        public static void Permitted(string User)
+        {
 
             string queryLogin;
             ADODB.Recordset recordset;
             Object rowsAffected;
             if (connect.State != 0) // Verifica conexión, si el output es 0 la conexión esta cerrada
             {
-                
+
             }
         }
     }
