@@ -25,6 +25,19 @@ FechaFin datetime,
 primary key (IDEvento)
 );
 
+CREATE TABLE Rol (
+    IDRol INT AUTO_INCREMENT ,
+    NombreRol VARCHAR(15) NOT NULL,
+    PRIMARY KEY (IDRol)
+);
+
+CREATE TABLE UsuarioRol (
+    IDRol INT NOT NULL,
+    Usuario VARCHAR(25) NOT NULL,
+    PRIMARY KEY (Usuario),
+    FOREIGN KEY (IDRol) REFERENCES Rol(IDRol)
+);
+
 create table Prestamo(
 IDPrestamo		int not null auto_increment,
 IDDispositivo    int not null,
