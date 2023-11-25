@@ -19,6 +19,10 @@ namespace Loan
 
         private void Login_Load(object sender, EventArgs e)
         {
+            // Inicio funcion login
+            string usuario = textBoxUsuario.Text;
+            string contrasena = textBoxContrasena.Text;
+            Program.conect.Open("loan", usuario, contrasena);
 
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace Loan
 {
-    partial class Main
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -49,46 +49,51 @@
             this.btnInicio.TabIndex = 1;
             this.btnInicio.Text = "Inicio";
             this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // btnPrestamo
             // 
             this.btnPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrestamo.Location = new System.Drawing.Point(-1, 177);
+            this.btnPrestamo.Location = new System.Drawing.Point(-1, 188);
             this.btnPrestamo.Name = "btnPrestamo";
             this.btnPrestamo.Size = new System.Drawing.Size(283, 49);
             this.btnPrestamo.TabIndex = 2;
             this.btnPrestamo.Text = "Préstamo";
             this.btnPrestamo.UseVisualStyleBackColor = true;
+            this.btnPrestamo.Click += new System.EventHandler(this.btnPrestamo_Click);
             // 
             // btnDevolucion
             // 
             this.btnDevolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevolucion.Location = new System.Drawing.Point(-1, 255);
+            this.btnDevolucion.Location = new System.Drawing.Point(-1, 274);
             this.btnDevolucion.Name = "btnDevolucion";
             this.btnDevolucion.Size = new System.Drawing.Size(283, 49);
             this.btnDevolucion.TabIndex = 3;
             this.btnDevolucion.Text = "Devolución";
             this.btnDevolucion.UseVisualStyleBackColor = true;
+            this.btnDevolucion.Click += new System.EventHandler(this.btnDevolucion_Click);
             // 
             // btnAlta
             // 
             this.btnAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlta.Location = new System.Drawing.Point(-1, 340);
+            this.btnAlta.Location = new System.Drawing.Point(-1, 356);
             this.btnAlta.Name = "btnAlta";
             this.btnAlta.Size = new System.Drawing.Size(283, 49);
             this.btnAlta.TabIndex = 4;
             this.btnAlta.Text = "Alta de dispositivo";
             this.btnAlta.UseVisualStyleBackColor = true;
+            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
             // 
             // btnBaja
             // 
             this.btnBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaja.Location = new System.Drawing.Point(-1, 431);
+            this.btnBaja.Location = new System.Drawing.Point(-1, 441);
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(283, 49);
             this.btnBaja.TabIndex = 5;
             this.btnBaja.Text = "Baja de dispositivo";
             this.btnBaja.UseVisualStyleBackColor = true;
+            this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
             // 
             // btnSalir
             // 
@@ -128,6 +133,7 @@
             this.DGVInicio.Name = "DGVInicio";
             this.DGVInicio.Size = new System.Drawing.Size(745, 572);
             this.DGVInicio.TabIndex = 0;
+            this.DGVInicio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVInicio_CellContentClick);
             // 
             // Main
             // 
