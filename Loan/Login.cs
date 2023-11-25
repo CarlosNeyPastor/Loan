@@ -19,11 +19,42 @@ namespace Loan
 
         private void Login_Load(object sender, EventArgs e)
         {
-            // Inicio función login
-            string user = textBoxUser.Text;
-            string password = textBoxPassword.Text;
-            Program.connect.Open("loan", user, password);
+        
+        }
 
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            Program.connect.CursorLocation = ADODB.CursorLocationEnum.adUseClient;
+            try
+            {
+                // Inicio función login
+                string User = textBoxUser.Text;
+                string Password = textBoxPassword.Text;
+                Program.Permitted(textBoxUser.Text);
+                Program.Permitted(User);
+                Program.connect.Open("loan", User, Password);
+                // Llama al formulario MainMenu para usar la aplicación
+                MainMenu formMainMenu = new MainMenu();
+                formMainMenu.MdiParent = this;
+                formMainMenu.Show();
+                // Cierra el formulario de Login
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("El usuario o la contraseña son incorrectos");
+                return;
+            }
+
+            Program.connect.CursorLocation = ADODB.CursorLocationEnum.adUseClient;
+            // Habilita a memoria de consultas
+            this.Close();
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

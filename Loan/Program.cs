@@ -9,11 +9,8 @@ namespace Loan
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
 
-        public static MainMenu formMainMenu; /// No se instancia la clase
+        public static Login formLogin; /// No se instancia la clase
         public static ADODB.Connection connect = new ADODB.Connection(); /// Conexión a la base de datos
 
         [STAThread]
@@ -22,7 +19,7 @@ namespace Loan
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             /// Application.Run(new MainMenu());  # Original
-            Application.Run(formMainMenu = new MainMenu());
+            Application.Run(formLogin = new Login()); /// Indica que inicia en Login
         }
 
         public static void Permitted(string User)
