@@ -13,7 +13,7 @@ namespace Loan
         /// </summary>
 
         public static MainMenu formMainMenu; /// No se instancia la clase
-        public static ADODB.Connection conect = new ADODB.Connection(); /// Conexión a la base de datos
+        public static ADODB.Connection connect = new ADODB.Connection(); /// Conexión a la base de datos
 
         [STAThread]
         static void Main()
@@ -22,6 +22,14 @@ namespace Loan
             Application.SetCompatibleTextRenderingDefault(false);
             /// Application.Run(new MainMenu());  # Original
             Application.Run(formMainMenu = new MainMenu());
+
+            string queryLogin;
+            ADODB.Recordset recordset;
+            Object rowsAffected;
+            if (connect.State != 0) // Verifica conexión, si el output es 0 la conexión esta cerrada
+            {
+                
+            }
         }
     }
 }
