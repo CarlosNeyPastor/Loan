@@ -46,10 +46,9 @@ namespace Loan
                 return;
             }
 
-            Program.connect.CursorLocation = ADODB.CursorLocationEnum.adUseClient;
             // Habilita a memoria de consultas
+            Program.connect.CursorLocation = ADODB.CursorLocationEnum.adUseClient;
             this.Close();
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
