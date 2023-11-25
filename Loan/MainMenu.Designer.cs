@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnPrestamo = new System.Windows.Forms.Button();
             this.btnDevolucion = new System.Windows.Forms.Button();
@@ -135,7 +136,7 @@
             this.DGVInicio.TabIndex = 0;
             this.DGVInicio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVInicio_CellContentClick);
             // 
-            // Main
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,8 +150,9 @@
             this.Controls.Add(this.btnPrestamo);
             this.Controls.Add(this.btnInicio);
             this.Controls.Add(this.DGVInicio);
-            this.Name = "Main";
-            this.Text = "Main";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MainMenu";
+            this.Text = "Main menu";
             ((System.ComponentModel.ISupportInitialize)(this.DGVInicio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
