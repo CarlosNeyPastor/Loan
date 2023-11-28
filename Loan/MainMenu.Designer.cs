@@ -38,13 +38,14 @@
             this.lblLoan = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.DGVInicio = new System.Windows.Forms.DataGridView();
+            this.btnLista = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVInicio)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInicio
             // 
             this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.Location = new System.Drawing.Point(-1, 106);
+            this.btnInicio.Location = new System.Drawing.Point(-1, 146);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(283, 49);
             this.btnInicio.TabIndex = 1;
@@ -55,7 +56,7 @@
             // btnPrestamo
             // 
             this.btnPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrestamo.Location = new System.Drawing.Point(-1, 188);
+            this.btnPrestamo.Location = new System.Drawing.Point(-1, 201);
             this.btnPrestamo.Name = "btnPrestamo";
             this.btnPrestamo.Size = new System.Drawing.Size(283, 49);
             this.btnPrestamo.TabIndex = 2;
@@ -66,7 +67,7 @@
             // btnDevolucion
             // 
             this.btnDevolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevolucion.Location = new System.Drawing.Point(-1, 274);
+            this.btnDevolucion.Location = new System.Drawing.Point(-1, 256);
             this.btnDevolucion.Name = "btnDevolucion";
             this.btnDevolucion.Size = new System.Drawing.Size(283, 49);
             this.btnDevolucion.TabIndex = 3;
@@ -77,7 +78,7 @@
             // btnAlta
             // 
             this.btnAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlta.Location = new System.Drawing.Point(-1, 356);
+            this.btnAlta.Location = new System.Drawing.Point(-1, 366);
             this.btnAlta.Name = "btnAlta";
             this.btnAlta.Size = new System.Drawing.Size(283, 49);
             this.btnAlta.TabIndex = 4;
@@ -88,7 +89,7 @@
             // btnBaja
             // 
             this.btnBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaja.Location = new System.Drawing.Point(-1, 441);
+            this.btnBaja.Location = new System.Drawing.Point(-1, 421);
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(283, 49);
             this.btnBaja.TabIndex = 5;
@@ -136,11 +137,23 @@
             this.DGVInicio.TabIndex = 0;
             this.DGVInicio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVInicio_CellContentClick);
             // 
+            // btnLista
+            // 
+            this.btnLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLista.Location = new System.Drawing.Point(-1, 311);
+            this.btnLista.Name = "btnLista";
+            this.btnLista.Size = new System.Drawing.Size(283, 49);
+            this.btnLista.TabIndex = 18;
+            this.btnLista.Text = "Lista de dispositivos";
+            this.btnLista.UseVisualStyleBackColor = true;
+            this.btnLista.Click += new System.EventHandler(this.btnLista_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 596);
+            this.Controls.Add(this.btnLista);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblLoan);
             this.Controls.Add(this.btnSalir);
@@ -153,6 +166,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
             this.Text = "Main menu";
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVInicio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -169,6 +183,7 @@
         private System.Windows.Forms.Label lblLoan;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.DataGridView DGVInicio;
+        private System.Windows.Forms.Button btnLista;
     }
 }
 

@@ -29,7 +29,7 @@ namespace Loan
 
         private void btnPrestamo_Click(object sender, EventArgs e)
         {
-
+            // Refresh de DataGrip 
         }
 
         private void btnDevolucion_Click(object sender, EventArgs e)
@@ -50,6 +50,18 @@ namespace Loan
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            //switch
+            //btnAlta.Visible = false;
+
+        }
+
+        private void btnLista_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
