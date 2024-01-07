@@ -131,9 +131,9 @@
             // DGVInicio
             // 
             this.DGVInicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVInicio.Location = new System.Drawing.Point(288, 12);
+            this.DGVInicio.Location = new System.Drawing.Point(288, 146);
             this.DGVInicio.Name = "DGVInicio";
-            this.DGVInicio.Size = new System.Drawing.Size(745, 572);
+            this.DGVInicio.Size = new System.Drawing.Size(745, 438);
             this.DGVInicio.TabIndex = 0;
             this.DGVInicio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVInicio_CellContentClick);
             // 
