@@ -46,7 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AltaDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaDispositivo.Designer.cs">
+      <DependentUpon>AltaDispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BajaDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BajaDispositivo.Designer.cs">
+      <DependentUpon>BajaDispositivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBFunctions.cs" />
+    <Compile Include="Devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devolucion.Designer.cs">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamo.Designer.cs">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +85,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AltaDispositivo.resx">
+      <DependentUpon>AltaDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BajaDispositivo.resx">
+      <DependentUpon>BajaDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolucion.resx">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamo.resx">
+      <DependentUpon>Prestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

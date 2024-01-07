@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnPrestamo = new System.Windows.Forms.Button();
-            this.btnDevolucion = new System.Windows.Forms.Button();
-            this.btnAlta = new System.Windows.Forms.Button();
-            this.btnBaja = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblLoan = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.DGVInicio = new System.Windows.Forms.DataGridView();
             this.btnLista = new System.Windows.Forms.Button();
+            this.btnBaja = new System.Windows.Forms.Button();
+            this.btnAlta = new System.Windows.Forms.Button();
+            this.btnDevolucion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVInicio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,39 +63,6 @@
             this.btnPrestamo.Text = "Préstamo";
             this.btnPrestamo.UseVisualStyleBackColor = true;
             this.btnPrestamo.Click += new System.EventHandler(this.btnPrestamo_Click);
-            // 
-            // btnDevolucion
-            // 
-            this.btnDevolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevolucion.Location = new System.Drawing.Point(-1, 256);
-            this.btnDevolucion.Name = "btnDevolucion";
-            this.btnDevolucion.Size = new System.Drawing.Size(283, 49);
-            this.btnDevolucion.TabIndex = 3;
-            this.btnDevolucion.Text = "Devolución";
-            this.btnDevolucion.UseVisualStyleBackColor = true;
-            this.btnDevolucion.Click += new System.EventHandler(this.btnDevolucion_Click);
-            // 
-            // btnAlta
-            // 
-            this.btnAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlta.Location = new System.Drawing.Point(-1, 366);
-            this.btnAlta.Name = "btnAlta";
-            this.btnAlta.Size = new System.Drawing.Size(283, 49);
-            this.btnAlta.TabIndex = 4;
-            this.btnAlta.Text = "Alta de dispositivo";
-            this.btnAlta.UseVisualStyleBackColor = true;
-            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
-            // 
-            // btnBaja
-            // 
-            this.btnBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaja.Location = new System.Drawing.Point(-1, 421);
-            this.btnBaja.Name = "btnBaja";
-            this.btnBaja.Size = new System.Drawing.Size(283, 49);
-            this.btnBaja.TabIndex = 5;
-            this.btnBaja.Text = "Baja de dispositivo";
-            this.btnBaja.UseVisualStyleBackColor = true;
-            this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
             // 
             // btnSalir
             // 
@@ -131,9 +98,9 @@
             // DGVInicio
             // 
             this.DGVInicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVInicio.Location = new System.Drawing.Point(288, 146);
+            this.DGVInicio.Location = new System.Drawing.Point(288, 12);
             this.DGVInicio.Name = "DGVInicio";
-            this.DGVInicio.Size = new System.Drawing.Size(745, 438);
+            this.DGVInicio.Size = new System.Drawing.Size(745, 572);
             this.DGVInicio.TabIndex = 0;
             this.DGVInicio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVInicio_CellContentClick);
             // 
@@ -147,6 +114,39 @@
             this.btnLista.Text = "Lista de dispositivos";
             this.btnLista.UseVisualStyleBackColor = true;
             this.btnLista.Click += new System.EventHandler(this.btnLista_Click);
+            // 
+            // btnBaja
+            // 
+            this.btnBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaja.Location = new System.Drawing.Point(-1, 421);
+            this.btnBaja.Name = "btnBaja";
+            this.btnBaja.Size = new System.Drawing.Size(283, 49);
+            this.btnBaja.TabIndex = 5;
+            this.btnBaja.Text = "Baja de dispositivo";
+            this.btnBaja.UseVisualStyleBackColor = true;
+            this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
+            // 
+            // btnAlta
+            // 
+            this.btnAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlta.Location = new System.Drawing.Point(-1, 366);
+            this.btnAlta.Name = "btnAlta";
+            this.btnAlta.Size = new System.Drawing.Size(283, 49);
+            this.btnAlta.TabIndex = 4;
+            this.btnAlta.Text = "Alta de dispositivo";
+            this.btnAlta.UseVisualStyleBackColor = true;
+            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
+            // 
+            // btnDevolucion
+            // 
+            this.btnDevolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevolucion.Location = new System.Drawing.Point(-1, 256);
+            this.btnDevolucion.Name = "btnDevolucion";
+            this.btnDevolucion.Size = new System.Drawing.Size(283, 49);
+            this.btnDevolucion.TabIndex = 3;
+            this.btnDevolucion.Text = "Devolución";
+            this.btnDevolucion.UseVisualStyleBackColor = true;
+            this.btnDevolucion.Click += new System.EventHandler(this.btnDevolucion_Click);
             // 
             // MainMenu
             // 
@@ -176,14 +176,14 @@
         #endregion
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Button btnPrestamo;
-        private System.Windows.Forms.Button btnDevolucion;
-        private System.Windows.Forms.Button btnAlta;
-        private System.Windows.Forms.Button btnBaja;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblLoan;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.DataGridView DGVInicio;
         private System.Windows.Forms.Button btnLista;
+        private System.Windows.Forms.Button btnBaja;
+        private System.Windows.Forms.Button btnAlta;
+        private System.Windows.Forms.Button btnDevolucion;
     }
 }
 
